@@ -17,7 +17,7 @@ class ReactButton extends Component {
         size=""
         href="https://solanaburna.netlify.app/"
         >
-          Mint Social
+          Mint Social Token
         </AwesomeButton>
       </div>
     );
