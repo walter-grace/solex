@@ -12,6 +12,13 @@ class ReactButton extends Component {
         >
           Get New Wallet
         </AwesomeButton>
+        <hr/>
+        <AwesomeButton type="primary"
+        size=""
+        href="https://solanaburna.netlify.app/"
+        >
+          Mint Social
+        </AwesomeButton>
       </div>
     );
   }
