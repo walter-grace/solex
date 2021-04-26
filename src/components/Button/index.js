@@ -7,14 +7,14 @@ class ReactButton extends Component {
     return (
       <div>
         <AwesomeButton type="primary"
-        size=""
+        size="large"
         href="https://solanaburna.netlify.app/"
         >
           Get New Wallet
         </AwesomeButton>
         <hr/>
         <AwesomeButton type="primary"
-        size=""
+        size="large"
         href="https://solanaburna.netlify.app/"
         >
           Mint Social Token
