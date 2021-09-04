@@ -17,10 +17,8 @@ import { formatUSD } from "../../utils/utils";
 export const HomeView = () => {
   const { marketEmitter, midPriceInUSD } = useMarkets();
   const { tokenMap } = useConnectionConfig();
-  const SRM_ADDRESS = 'SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt';
-  const KIN_ADDRESS = 'kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6';
-  const KIN = useUserBalance(KIN_ADDRESS);
-  const SRM = useUserBalance(SRM_ADDRESS);
+  const SUNNY_ADDRESS = "SUNNYWgPQmFxe9wTZzNK7iPnJ3vYDrkgnxJRJm1s3ag";
+  const SUNNY = useUserBalance(SUNNY_ADDRESS);
   const SOL = useUserBalance(WRAPPED_SOL_MINT);
   const { balanceInUSD: totalBalanceInUSD } = useUserTotalBalance();
 
@@ -42,9 +40,9 @@ export const HomeView = () => {
     <Row gutter={[16, 16]} align="middle">
       <Col span={24}>
         <h2 style={{  }}>Your balances ({formatUSD.format(totalBalanceInUSD)}):</h2>
-        <h2>Kin: {KIN.balance} ({formatUSD.format(KIN.balanceInUSD)})</h2>
+        <h2>SUNNY: {SUNNY.balance} ({formatUSD.format(SUNNY.balanceInUSD)})</h2>
         <h2 style={{ display: 'inline-flex', alignItems: 'center' }}>
-          <TokenIcon mintAddress={SRM_ADDRESS} /> SOL: {SOL?.balance} ({formatUSD.format(SOL?.balanceInUSD)})
+          <TokenIcon mintAddress={SUNNY_ADDRESS} /> SOL: {SOL?.balance} ({formatUSD.format(SOL?.balanceInUSD)})
         </h2>
       </Col>
       <Col span={12}>
